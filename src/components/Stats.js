@@ -10,30 +10,22 @@ function Stats({
 })
 {
     return(
-        /*<Card>
-            <CardMedia
-                components='img'
-                height='140'
-                image={image}
-                alt={alt_text}
-            />
-        </Card>*/
         <Card>
             <CardMedia
                 components='img'
                 height='140'
                 image={image}
                 alt={alt_text}
-            />
+            /> 
             <CardContent>
-                <h2>
-                    {name}
-                </h2>
-                <p>
-                    {rarity}
-                </p>
-                <ol>
-                    {abilities.map(
+                 <h2>
+                     {name}
+                 </h2>
+                 <p>
+                     {rarity}
+                 </p>
+                 <ol>
+                     {abilities.map(
                        (culinary) => {
                         return <li key={culinary}>{culinary}</li>;
                        } 
@@ -41,6 +33,7 @@ function Stats({
                 </ol>
             </CardContent>
         </Card>
+        
     );
 }
 export default Stats;

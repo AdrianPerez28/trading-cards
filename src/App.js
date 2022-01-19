@@ -41,18 +41,19 @@ function App() {
   ];
   
   return (
-    <Grid container spacing={0}>
-      <h1>hello</h1>
+    <Grid container spacing={2}>
+      
       {
         chef.map((culinary) => {
           return (
             <Grid item xs={4}>
-              <h1>hello there</h1>
+              
               <Stats
               name={culinary.name}
               rarity={culinary.rarity}
               image={culinary.image}
               alt_text={culinary.alt_text}
+              abilities={culinary.abilities}
             />
             </Grid>
           )

@@ -1,3 +1,7 @@
+.culinary-parent{
+  display:flex;
+}
+
 /*.App {
   text-align: center;
 }
@@ -37,6 +41,3 @@
   }
 }
 */
-.Stats-parent{
-  display:flex;
-}
