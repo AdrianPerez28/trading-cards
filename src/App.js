@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
+
+  const chef = [
+    {
+      title: 'Anthony Bourdain',
+      rarity: 'Rare',
+      image: 'https://www.papercitymag.com/wp-content/uploads/2016/02/177_e_0316.jpg',
+      alt_text: 'Young Anthony Bourdain',
+      Special_abilities: [
+        'Rear-naked Choke',
+        'Pork Chop Slap',
+        'Bodega Sandwich Slam'
+      ]
+    },
+    {
+      title: 'Julia Child',
+      rarity: 'Super Rare',
+      image: 'https://allthatsinteresting.com/wordpress/wp-content/uploads/2020/06/portrait-of-julia-child.jpg',
+      alt_text: 'Black and white Julia Child',
+      Special_abilities: [
+        'Beef Stew Splash',
+
+      ]
+    }
+  ]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
     </div>
   );
 }
