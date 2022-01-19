@@ -9,8 +9,7 @@ function Stats({
     abilities
 })
 {
-    console.log(image);
-    console.log(alt_text);
+    
     return(
         <Card>
             <CardMedia

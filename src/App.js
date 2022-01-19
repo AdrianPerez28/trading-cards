@@ -61,23 +61,7 @@ function App() {
         
       }
     </Grid>
-    /*<Grid container spacing={2}>
-      {
-        chef.map((culinary) => {
-          return (
-            <Grid item xs={4}>
-              <Stats
-              name={culinary.name}
-              rarity={culinary.rarity}
-              image={culinary.image}
-              alt_text={culinary.alt_text}
-            />
-            </Grid>
-          )
-        })
-      }
-      
-    </Grid>*/
+    
   );
 }
 
