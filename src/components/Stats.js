@@ -9,11 +9,13 @@ function Stats({
     abilities
 })
 {
+    console.log(image);
+    console.log(alt_text);
     return(
         <Card>
             <CardMedia
-                components='img'
-                height='140'
+                component='img'
+                height='200'
                 image={image}
                 alt={alt_text}
             /> 
