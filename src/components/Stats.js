@@ -14,7 +14,7 @@ function Stats({
         <Card>
             <CardMedia
                 component='img'
-                height='200'
+                height='500'
                 image={image}
                 alt={alt_text}
             /> 
