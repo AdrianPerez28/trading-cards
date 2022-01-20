@@ -1,8 +1,11 @@
-.culinary-parent{
+/*.culinary {
   display:flex;
-}
+}*/
 .background {
-  background-image: url("https://services.travelsavers.com/AMGService.svc/REST/GetImage?ImageID=ba5713d4-154c-ea11-9b23-782bcb667b27") !important;
+  background-image: url("https://images.pexels.com/photos/616484/pexels-photo-616484.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: bisque !important;
 }
 /*.App {
   text-align: center;

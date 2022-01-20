@@ -14,7 +14,7 @@ function Stats({
     
     return(
         <Card className='background'>
-            <CardHeader title=<h2>{name}</h2> />
+            <CardHeader title={name} />
             <CardMedia
                 component='img'
                 height='350'
