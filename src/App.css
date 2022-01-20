@@ -1,7 +1,9 @@
 .culinary-parent{
   display:flex;
 }
-
+.background {
+  background-image: url("https://services.travelsavers.com/AMGService.svc/REST/GetImage?ImageID=ba5713d4-154c-ea11-9b23-782bcb667b27") !important;
+}
 /*.App {
   text-align: center;
 }

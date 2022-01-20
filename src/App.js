@@ -1,5 +1,7 @@
 import Stats from './components/Stats';
 import Grid from '@mui/material/Grid';
+import Checkbox from '@mui/material/Checkbox';
+import FormControlLabel from '@mui/material/FormControlLabel';
 import './App.css';
 
 function App() {
@@ -8,6 +10,7 @@ function App() {
     {
       name: 'Anthony Bourdain',
       rarity: 'Rare',
+      type: 'Earth',
       image: 'https://www.papercitymag.com/wp-content/uploads/2016/02/177_e_0316.jpg',
       alt_text: 'Young Anthony Bourdain',
       abilities: [
@@ -19,6 +22,7 @@ function App() {
     {
       name: 'Julia Child',
       rarity: 'Super Rare',
+      type: 'Water',
       image: 'https://allthatsinteresting.com/wordpress/wp-content/uploads/2020/06/portrait-of-julia-child.jpg',
       alt_text: 'Black and white Julia Child',
       abilities: [
@@ -30,6 +34,7 @@ function App() {
     {
       name: 'Guy Fieri',
       rarity: 'Common',
+      type: 'Fire',
       image: 'https://media.gq.com/photos/59dfc6d9d61cb80476584e18/1:1/w_676,h_676,c_limit/guy-fieiri-flame.jpg',
       alt_text: 'Excited Guy Fieri',
       abilities: [
@@ -47,10 +52,12 @@ function App() {
         chef.map((culinary) => {
           return (
             <Grid item xs={4}>
+              <FormControlLabel control={<Checkbox defaultChecked />} label="Own" />
               
               <Stats
               name={culinary.name}
               rarity={culinary.rarity}
+              type={culinary.type}
               image={culinary.image}
               alt_text={culinary.alt_text}
               abilities={culinary.abilities}

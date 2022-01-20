@@ -1,9 +1,11 @@
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
+import CardHeader from '@mui/material/CardHeader';
 function Stats({
     name,
     rarity,
+    type,
     image,
     alt_text,
     abilities
@@ -11,16 +13,17 @@ function Stats({
 {
     
     return(
-        <Card>
+        <Card className='background'>
+            <CardHeader title=<h2>{name}</h2> />
             <CardMedia
                 component='img'
-                height='500'
+                height='350'
                 image={image}
                 alt={alt_text}
             /> 
             <CardContent>
                  <h2>
-                     {name}
+                     {type}
                  </h2>
                  <p>
                      {rarity}
